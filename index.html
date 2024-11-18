@@ -5,34 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROWDY BGMI HACKS</title>
     <style>
+        /* Style.css embedded in index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #111; /* Dark background */
+            background-color: #000; /* Black background */
             color: #f1f1f1; /* Light text */
             font-family: 'Arial', sans-serif;
             text-align: center;
-            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
         }
 
-        h1 {
-            color: #ff5733; /* Bright orange for the title */
-            font-size: 4em;
-            margin-top: 50px;
-            animation: fadeInDown 2s ease;
+        .container {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 3em;
+            color: #ff5733; /* Bright orange text */
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: fadeIn 2s ease;
         }
 
         .hack {
-            margin: 30px;
+            margin: 15px 0;
             padding: 20px;
-            border: 2px solid #ff5733; /* Orange border */
-            background-color: rgba(255, 87, 51, 0.1); /* Slightly transparent orange background */
+            border: 2px solid #ff5733;
+            background-color: rgba(255, 87, 51, 0.2); /* Slight orange background */
             border-radius: 15px;
-            font-size: 1.5em;
-            animation: pulse 2s infinite;
+            font-size: 1.2em;
+            animation: bounce 2s infinite;
+        }
+
+        .hack h2 {
+            color: #ff5733; /* Title color */
+        }
+
+        .hack p {
+            font-size: 1em;
+            color: #ccc;
         }
 
         .telegram-link {
             display: inline-block;
-            background-color: #1d72b8; /* Bright blue for the Telegram link */
+            background-color: #1d72b8;
             color: white;
             padding: 15px 30px;
             margin-top: 30px;
@@ -40,14 +67,14 @@
             font-size: 1.2em;
             border-radius: 8px;
             transition: background-color 0.3s ease;
-            animation: fadeInUp 1.5s ease;
+            animation: fadeInUp 2s ease;
         }
 
         .telegram-link:hover {
             background-color: #105a8d;
         }
 
-        @keyframes fadeInDown {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(-50px);
@@ -69,26 +96,36 @@
             }
         }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
             }
             50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
+                transform: translateY(-15px);
             }
         }
     </style>
 </head>
 <body>
-    <h1>ROWDY BGMI HACKS</h1>
-    
-    <div class="hack">🔥 Magic Bullet Hack 🔥</div>
-    <div class="hack">👁 ESP Hack 👁</div>
-    <div class="hack">🚀 Bullet Track Hack 🚀</div>
-    
-    <a href="https://t.me/+0AOQYHatQeFmOWQ1" class="telegram-link" target="_blank">Join Telegram for More Hacks!</a>
+    <div class="container">
+        <h1 class="title">ROWDY BGMI HACKS</h1>
+        
+        <div class="hack">
+            <h2>🔥 Magic Bullet Hack</h2>
+            <p>Unlock your shooting skills with this magic bullet hack!</p>
+        </div>
+        
+        <div class="hack">
+            <h2>👁 ESP Hack</h2>
+            <p>See your enemies through walls with ESP hack!</p>
+        </div>
+
+        <div class="hack">
+            <h2>🚀 Bullet Track Hack</h2>
+            <p>Track every bullet path and enhance your aiming!</p>
+        </div>
+        
+        <a href="https://t.me/+0AOQYHatQeFmOWQ1" class="telegram-link" target="_blank">Join Telegram for More Hacks!</a>
+    </div>
 </body>
 </html>
